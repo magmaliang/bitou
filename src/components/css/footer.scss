@@ -1,0 +1,12 @@
+.footer{
+	background-color: #242836;
+	color: #fff;
+	padding: 50px;
+	display: flex;
+	.carda, .cardc{
+		width: 200px;
+	}
+	.cardb {
+		flex: 1;
+	}
+}

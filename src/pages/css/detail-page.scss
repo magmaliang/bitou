@@ -1,0 +1,9 @@
+.detail-page {
+	display: flex;
+	.left-part {
+		flex: 1;
+	}
+	.right-part {
+		width: 300px;
+	}
+}

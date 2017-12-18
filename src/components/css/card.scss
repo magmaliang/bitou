@@ -1,0 +1,127 @@
+.home-card {
+	.home-card-header{
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 28px;
+		.title {
+			font-size: 24px;
+		}
+
+	}
+	.card-list {
+		width: 1080px;
+		display: flex;
+		.card-container {
+			flex: 1;
+			padding: 30px;
+			text-align: center;
+			.bi-name{
+				font-size: 24px;
+			}
+
+			.score{
+				font-size: 24px;
+				color: #549BFF;
+				padding-right: 4px;
+			}
+			
+			.card {
+				border: 1px solid #f0f0f0;
+				box-shadow: 0 4px 4px 0 #F0F0F3;
+				border-radius: 12px;
+				height: 406px;
+				padding: 20px;
+				background-color: #fff;
+				width: 344px;
+				.spec {
+					font-size: 14px;
+					color: #b0bbc6;
+					position: relative;
+					top: -3px;
+				}
+				.status{
+					padding: 2px 5px;
+					border: 1px solid #f0f0f0;
+					color: #549BFF;
+					float: right;
+					position: relative;
+					top: 4px;
+				}
+				.bi-score{
+					padding-bottom: 20px;
+					border-bottom: 1px solid #f0f0f0;
+				}
+
+				.to-detail {
+					padding: 30px;
+					text-align: center;
+					.ant-btn {
+						width: 160px;
+						height: 40px;
+						background-color: #549BFF;
+						border-radius: 12px;
+						font-size: 15px;
+					}
+				}
+
+			}
+
+		}
+	}
+}
+
+.list-card {
+	padding: 20px;
+	.card{
+		border-radius: 12px;
+		overflow: hidden;
+		display: flex;
+		background-color: #fff;
+		.cover{
+			height: 249px;
+			width: 316px;
+		}
+		.info{
+			flex: 1;
+			padding: 20px;
+			display: flex;
+			.summary{
+				height: 72px;
+				overflow: scroll;
+				margin-bottom: 15px;
+			}
+			.left-part{
+				flex: 1;
+				.title {
+					font-size: 24px;
+				}
+				.status{
+					padding: 5px;
+					color: #549BFF;
+					border: 1px solid #ddd;
+					margin: 15px 0;
+				}
+				.time-line{
+					padding: 10px;
+					.up{
+						display: flex;
+						span{
+							flex:1;
+						}
+					}
+					.down {
+						display: flex;
+						span{
+							flex: 1;
+						}
+					}
+				}
+				
+			}
+			.right-part{
+				width: 200px;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,44 @@
+.home-page {
+	.subscriber{
+		text-align: center;
+		input{
+			width: 400px;
+			height: 40px;
+			margin-right: 20px;
+			border-radius: 100px;
+		}
+		.ant-btn {
+			background-color: #549BFF;
+			width: 100px;
+			font-size: 15px;
+			height: 40px;
+			border-radius: 100px;
+		}
+	}
+}
+.statistic-block{
+	display: flex;
+	background-color: #fff;
+	padding: 50px;
+	.block {
+		flex:1;
+		.icon {
+			background-color: #ddd;
+			height: 50px;
+			width: 50px;
+			border-radius: 100px;
+		}
+	}
+}
+
+.ant-layout-header{
+	.ant-menu{
+		float: right;
+	}
+}
+
+#container{
+	.ant-rate{
+		color: #92C0FF;
+	}
+}

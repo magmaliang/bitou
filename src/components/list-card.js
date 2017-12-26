@@ -1,8 +1,9 @@
-import React, {Component} from "react";
+﻿import React, {Component} from "react";
 import { Button } from 'antd';
 import { Rate } from 'antd';
 import {Host} from '../util/config';
 import ToDetailButton from './to-detail';
+import TimeLine from './time-line';
 
 require('./css/card.scss')
 
@@ -27,6 +28,12 @@ export default class ListCards extends Component {
 				end: '结束'
 
 			}
+			const timeLineData = {
+				start: card.start,
+				end: card.end,
+				status: card.status
+			}
+
 			return <div className='card' key={index}>
 				<img src={Host + card.cover}  className='cover'/>
 				<div className='info'>
@@ -38,23 +45,12 @@ export default class ListCards extends Component {
 						<div className='summary' dangerouslySetInnerHTML= {this.createMarkup(card.overview)}>
 						</div>
 						<span className='status'>{status[card.status]}</span>
-						<div className='time-line'>
-							<div className='up'>
-								<span className='beg'>{card.start}</span>
-								<span className='to-end'>{toEnd}</span>
-								<span className='end'>{card.end}</span>
-							</div>
-							<div className='down'>
-								<span className='beg'>ico开始</span>
-								<span className='to-end'>{status[card.status]}</span>
-								<span className='end'>ico结束</span>
-							</div>
-						</div>
+						<TimeLine {...timeLineData} />
 					</div>
 					<div className='right-part'>
-						<span>{card.rating}</span>
+						<span className='rate'>{card.rating}</span>
 						<span>专家综合评分</span>
-						<Rate disabled defaultValue={card.rating/2.0} />
+						<Rate disabled allowHalf defaultValue={card.rating/2} />
 						<ToDetailButton uuid={card.uuid}/>
 					</div>
 				</div>

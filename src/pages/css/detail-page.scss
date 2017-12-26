@@ -1,9 +1,14 @@
 .detail-page {
 	display: flex;
+	padding: 20px;
 	.left-part {
 		flex: 1;
 	}
 	.right-part {
 		width: 300px;
 	}
+}
+
+.detail-form{
+	width: 800px;
 }

@@ -9,11 +9,12 @@
 
 	}
 	.card-list {
-		width: 1080px;
-		display: flex;
+		width: 1120px;
+		margin: 0 auto;
 		.card-container {
-			flex: 1;
-			padding: 30px;
+			margin: 12px;
+			box-sizing: border-box;
+			display: inline-block;
 			text-align: center;
 			.bi-name{
 				font-size: 24px;
@@ -63,7 +64,6 @@
 						font-size: 15px;
 					}
 				}
-
 			}
 
 		}
@@ -101,22 +101,6 @@
 					border: 1px solid #ddd;
 					margin: 15px 0;
 				}
-				.time-line{
-					padding: 10px;
-					.up{
-						display: flex;
-						span{
-							flex:1;
-						}
-					}
-					.down {
-						display: flex;
-						span{
-							flex: 1;
-						}
-					}
-				}
-				
 			}
 			.right-part{
 				width: 200px;
@@ -124,4 +108,74 @@
 		}
 	}
 }
+.detail-card{
+	border-radius: 12px;
+	padding: 20px;
+	width: 804px;
+	overflow: hidden;
+	display: flex;
+	margin-bottom: 24px;
+	background-color: #fff;
+	.cover {
+		height: 181px;
+		width: 231px;
+	}
+	.info{
+		flex: 1;
+		padding: 0 20px;
+		.summary{
+			height: 72px;
+			overflow: scroll;
+			margin-bottom: 15px;
+		}
+		.title {
+			font-size: 24px;
+		}
+		.card-middle{
+			padding: 20px 0;
+		}
+		.status{
+			padding: 5px;
+			color: #549BFF;
+			border: 1px solid #ddd;
+			margin: 15px 0;
+		}
+		.ant-btn-primary {
+			width: 160px;
+			height: 40px;
+			border-radius: 100px;
+			font-size: 15px;
+			float: right;
+		}
+		.score {
+			color: #549BFF;
+		}
+			
+	}
+}
 
+.time-line {
+	padding: 10px;
+	.up {
+		display: flex;
+		span{
+			flex:1;
+		}
+	}
+	.down {
+		display: flex;
+		span{
+			flex: 1;
+		}
+	}
+	.line {
+		height: 3px;
+		margin: 3px 0;
+		background-color: #f0f0f0;
+		.percentage {
+			background: linear-gradient(to right, #79B0FF, #549BFF);
+			width: 50%;
+			height: 3px;
+		}
+	}
+}

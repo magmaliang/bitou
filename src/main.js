@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { render } from 'react-dom'
-import { Router, Route, hashHistory, Link } from 'react-router';
+import { Router, Route, hashHistory, Link, IndexRoute } from 'react-router';
 import Home from './pages/home'
 import List from './pages/list'
 import Detail from './pages/detail'
@@ -13,10 +13,6 @@ import PFooter from './components/footer';
 require('antd/dist/antd.css')
 require('./main.scss')
 
-class ABC extends Component {
-	constructor(){super()}
-	render(){return <div>this is abc </div>}
-}
 
 class App extends Component {
 	constructor(options){
@@ -39,6 +35,7 @@ class App extends Component {
 			    </Header>
 			    <Content>
 			      	<Router history={hashHistory}>
+			      		<Route path="/" component={Home}/>
 						<Route path="/home" component={Home}/>
 						<Route path="/list" component={List}/>
 						<Route path="/detail" component={Detail}/>

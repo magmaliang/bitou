@@ -1,8 +1,11 @@
 import {Host} from './config';
 export default (uri, options = {}) => {
     const baseUrl = Host;
-    const url = baseUrl+uri;
-    
+    let url = uri;
+
+    if (url.indexOf('http:')===-1) {
+    	url = baseUrl+uri;
+    }  
 
     return fetch(url, options)
     .then(res => {
